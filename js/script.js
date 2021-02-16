@@ -37,20 +37,18 @@ var header = new Vue({
     bg: [
       {
         url: 'img/theme_slider1_bg-1.jpg',
-        title: 'Show your courses',
-        text: 'Edu prime is the most versatile WordPress theme fot educational purposes,showcasing universities, courses, secondary schools etc.'
+        title: 'Show your courses'
       },
       {
         url: 'img/theme_slider2_bg-1.jpg',
-        title: 'Key to your success',
-        text: 'Edu prime is the most versatile WordPress theme fot educational purposes,showcasing universities, courses, secondary schools etc.'
+        title: 'Key to your success'
       },
       {
         url: 'img/theme_slider3_bg-1.jpg',
-        title: 'Lead. Inspire. Win!',
-        text: 'Edu prime is the most versatile WordPress theme fot educational purposes,showcasing universities, courses, secondary schools etc.'
+        title: 'Lead. Inspire. Win!'
       }
-    ]
+    ],
+    indice: 0
   },
   methods:{
     showbox(index){
@@ -66,6 +64,20 @@ var header = new Vue({
     closebox(index){
       this.menu[index].displayBox = 'none';
     }
+  },
+  mounted(){
+    // cambio bg
+    setInterval(()=>
+    {
+      if (this.indice == 2) {
+        this.indice = 0;
+      }
+      else {
+        this.indice++;
+      }
+    }
+    , 5000);
+    // fine cambio bg
   }
 });
 // fine header

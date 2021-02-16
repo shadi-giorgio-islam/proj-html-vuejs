@@ -19,7 +19,7 @@
 </head>
 <body>
   <!-- inizio header -->
-  <header id="header" :style="{ backgroundImage: 'url(' + bg + ')' }">
+  <header id="header" :style="{ backgroundImage: 'url(' + bg[indice].url + ')' }">
     <!-- header layer -->
     <div class="layer">
       <!-- inizio menu -->
@@ -48,7 +48,7 @@
       <!-- fine menu -->
       <!-- inizio jumbotron -->
       <div class="jumbotron container">
-        <h1>Show your courses</h1>
+        <h1>{{bg[indice].title}}</h1>
         <p>Edu prime is the most versatile WordPress theme fot educational purposes,<br> showcasing universities, courses, secondary schools etc. </p>
         <div class="btns">
           <a href="#" class="btn yellow"><i class="fas fa-search"></i>Search courses</a>
@@ -72,6 +72,11 @@
     <!-- fine header layer -->
   </header>
   <!-- fine header -->
+  <!-- inizio main -->
+  <main>
+    
+  </main>
+  <!-- fine main -->
 <!-- javascript -->
 <script src="js/script.js" charset="utf-8"></script>
 </body>
