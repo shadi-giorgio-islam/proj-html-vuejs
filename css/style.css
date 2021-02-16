@@ -94,6 +94,33 @@ header .layer nav ul li a:hover{
 header .layer nav ul li:first-child a{
   color: #E9D758;
 }
+header .layer nav .small-menu{
+  background-color: #FFFFFF;
+  display: none;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+header .layer nav .small-menu a i{
+  color: #3D404F;
+  padding: 10px;
+}
+/* inizio responsive header */
+@media (max-width: 1199.98px) {
+  header .layer nav ul{
+    display: none;
+  }
+  header .layer nav .logo-header{
+    margin-left: 20px;
+  }
+  header .layer nav{
+    width: 100%;
+    background-color: #3D404F;
+  }
+  header .layer nav .small-menu{
+    display: block;
+  }
+}
+/* fine responsive header */
 /* menu-box */
 header .layer nav ul li .menu-box{
   display: none;
@@ -158,7 +185,7 @@ header .layer .left-box{
   width: 40px;
   border-radius: 0 5px 5px 0;
   background-color:  #E9D758;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
@@ -178,3 +205,6 @@ header .layer .left-box i{
 /* fine menu */
 /* fine layer */
 /* fine header */
+/* inizio main */
+inizi
+/* fine main */
