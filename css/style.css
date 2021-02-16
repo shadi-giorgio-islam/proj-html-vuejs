@@ -1,0 +1,180 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Fredoka One', cursive;
+}
+.container{
+  width: 90%;
+  margin: auto;
+}
+body p{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+ul{
+  list-style: none;
+}
+ul li{
+  display: inline-block;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a.btn{
+  padding: 23px 45px;
+  font-size: 14px;
+  border-radius: 35px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 20px 0px;
+}
+a.btn.yellow{
+  color: #FFFFFFCC;
+  background-color: #E9D758;
+  transition: background-color 1s linear;
+}
+a.btn.yellow:hover{
+  color: #E56768;
+  background-color: #FFFFFF;
+}
+a.btn.white{
+  color: #E56768;
+  background-color: #FFFFFF;
+  transition: background-color 1s linear, color 1s linear;
+}
+a.btn.white:hover{
+  color: #FFFFFFCC;
+  background-color: #E9D758;
+}
+/* fine regole generali */
+/* inizio header */
+header{
+  height: 750px;
+  width: 100%;
+  background-size: cover;
+}
+/* inizio layer */
+header .layer{
+  height: 100%;
+  width: 100%;
+  background-color: #DA5F60E6;
+  position: relative;
+}
+/* inizio menu */
+header .layer nav{
+  height: 100px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+/* logo */
+header .layer nav .logo-header img{
+  height: 50px;
+}
+/* fine logo */
+header .layer nav ul{
+  height: 100px;
+  line-height: 100px;
+}
+header .layer nav ul li{
+  position: relative;
+}
+header .layer nav ul li a{
+  color: #FFFFFF;
+  margin-right: 20px;
+  font-size: 16px;
+}
+header .layer nav ul li a:hover{
+  color: #E9D758;
+}
+header .layer nav ul li:first-child a{
+  color: #E9D758;
+}
+/* menu-box */
+header .layer nav ul li .menu-box{
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  border-radius: 15px;
+  background-color:  #FFFFFF;
+}
+header .layer nav ul li .menu-box.active{
+  display: flex;
+}
+header .layer nav ul li .menu-box a{
+  line-height: 0;
+  padding: 30px 0;
+  color: #3D404F;
+  font-size: 15px;
+}
+/* fine menu box */
+/* jumbotron */
+header .layer .jumbotron{
+  height: 100%;
+  text-align: center;
+  margin-top: 80px;
+}
+header .layer .jumbotron h1{
+  color: #FFFFFF;
+  font-size: 50px;
+  padding: 20px 0;
+}
+header .layer .jumbotron p{
+  color: #FFFFFF;
+  font-size: 18px;
+  padding: 20px 0;
+}
+header .layer .jumbotron .btns{
+  margin: 40px 0;
+}
+header .layer .jumbotron .btns a{
+  margin-right: 20px;
+}
+header .layer .jumbotron .btns a i{
+  margin-right: 10px;
+}
+/* fine jumbotron */
+/* img bg */
+header .layer .img-bg img{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* fine img bg */
+/* left box */
+header .layer .left-box{
+  height: 100px;
+  width: 40px;
+  border-radius: 0 5px 5px 0;
+  background-color:  #E9D758;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: width 0.2s linear;
+}
+header .layer .left-box:hover{
+  width: 50px;
+}
+header .layer .left-box i{
+  color: #FFFFFF;
+}
+/* fine left box */
+/* fine menu */
+/* fine layer */
+/* fine header */
