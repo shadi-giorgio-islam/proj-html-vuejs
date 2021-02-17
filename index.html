@@ -106,6 +106,7 @@
         <div class="images">
           <div v-for="(item, index) in faculties" class="img" :class="item.display" @click="showContent(index)">
             <img :src="item.smallImg" alt="faculties">
+            <h3>{{item.name}}</h3>
             <i v-if="item.display== 'active'" class="fas fa-sort-down fa-3x"></i>
           </div>
         </div>
@@ -294,6 +295,25 @@
       </div>
     </div>
     <!-- fine sezione newsletter -->
+    <!-- inizio sezione partners -->
+    <div id="partners">
+      <h2>Partners</h2>
+      <p>Leverage agile frameworks to provide a robust synopsis for high level<br> overviews. Iterative approaches to corporate strategy.</p>
+      <div class="images mini-container">
+        <img src="img/partner-1.png" alt="partners">
+        <img src="img/partner-2.png" alt="partners">
+        <img src="img/partner-3.png" alt="partners">
+        <img src="img/partner-4.png" alt="partners">
+        <img src="img/partner-5.png" alt="partners">
+        <img src="img/partner-6.png" alt="partners">
+        <img src="img/partner-7.png" alt="partners">
+        <img src="img/partner-8.png" alt="partners">
+      </div>
+      <div class="bg-img">
+        <img src="img/background-wave3.png" alt="">
+      </div>
+    </div>
+    <!-- fine sezione partners -->
   </main>
   <!-- fine main -->
 <!-- javascript -->

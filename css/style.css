@@ -8,6 +8,7 @@
 }
 body{
   font-family: 'Fredoka One', cursive;
+  background-color: #F7F8FA;
 }
 .container{
   width: 90%;
@@ -325,17 +326,26 @@ header .layer .left-box i{
   position: relative;
 }
 #faculties .images .img.active{
-  background-color: #E9D758;
+  background-color: lightgrey;
 }
 #faculties .images .img img{
   height: 100px;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+#faculties .images .img h3{
+  font-size: 20px;
+  color: #E56768;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
 #faculties .images .img i{
-  color: #E9D758;
+  color: lightgrey;
   position: absolute;
   bottom: -20px;
   left: 50%;
@@ -679,4 +689,40 @@ header .layer .left-box i{
   color:  #E56768;
 }
 /* fine sezione newsletter */
+/* inizio sezione partners */
+#partners{
+  padding: 40px 0;
+  height: 300px;
+  background-color: #FFFFFF;
+  text-align: center;
+  position: relative;
+}
+#partners .bg-img img{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 300px;
+  z-index: -1
+}
+#partners h2{
+  font-size: 48px;
+  color: #3D404F;
+}
+#partners p{
+  font-size: 18px;
+  padding: 40px 0;
+  color: #3D404F;
+}
+#partners .images{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#partners .images img{
+  height: 60px;
+  margin: 20px 20px 0 0;
+}
+/* fine sezione partners */
 /* fine main */
