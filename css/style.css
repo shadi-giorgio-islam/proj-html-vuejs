@@ -189,7 +189,7 @@ header .layer .jumbotron .btns a i{
 header .layer .img-bg img{
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
 }
 /* fine img bg */
@@ -199,6 +199,7 @@ header .layer .left-box{
   width: 40px;
   border-radius: 0 5px 5px 0;
   background-color:  #E9D758;
+  box-shadow: 0 0 3px #ccc;
   position: fixed;
   top: 50%;
   left: 0;
@@ -501,7 +502,7 @@ header .layer .left-box i{
 /* inizio sezione latest */
 #latest{
   background-color: #FFFFFF;
-  padding: 100px;
+  padding: 150px 0;
   text-align: left;
   position: relative;
 }
@@ -525,9 +526,10 @@ header .layer .left-box i{
   align-items: center;
 }
 #latest .mini-container .row .course{
-  height: 260px;
-  width: 300px;
+  height: 280px;
+  width: 320px;
   text-align: center;
+  margin-right: 20px;
   padding: 20px;
   position: relative;
   border-radius: 15px;
@@ -543,6 +545,7 @@ header .layer .left-box i{
   color: #3D404F;
 }
 #latest .mini-container .row .course p{
+  margin-bottom: 10px;
   font-size: 14px;
   color: #3D404F;
 }
@@ -571,4 +574,64 @@ header .layer .left-box i{
 }
 /* fine responsive latest */
 /* fine sezione latest */
+/* inizio sezione method */
+#method{
+  height: 600px;
+  width: 100%;
+  background-color: #FFFFFF;
+  position: relative;
+  z-index: -2
+}
+#method .mini-container{
+  position: relative;
+}
+#method .mini-container .bg-img-left img{
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+#method .mini-container .bg-img-right img{
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 60px);
+}
+/* fine sfondo */
+#method .mini-container .content{
+  padding-top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#method .mini-container .content .text{
+  width: 60%;
+}
+#method .mini-container .content .text h2{
+  font-size: 48px;
+  color: #3D404F;
+}
+#method .mini-container .content .text p{
+  padding: 40px 0 60px 0;
+  font-size: 16px;
+  color: #3D404F;
+}
+#method .mini-container .content .image{
+  width: 50%;
+}
+#method .mini-container .content .image img{
+  height: 350px;
+  z-index: 1;
+}
+/* responsive method */
+@media (max-width: 1199.98px) {
+  #method .mini-container .content .image img{
+    display: none;
+  }
+}
+/* fine responsive method */
+/* fine sezione method */
 /* fine main */
