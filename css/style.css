@@ -152,6 +152,7 @@ header .layer nav ul li .menu-box{
   width: 200px;
   border-radius: 15px;
   background-color:  #FFFFFF;
+  z-index: 2;
 }
 header .layer nav ul li .menu-box.active{
   display: flex;
@@ -168,6 +169,17 @@ header .layer .jumbotron{
   height: 100%;
   text-align: center;
   margin-top: 80px;
+}
+header .layer .jumbotron .slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+header .layer .jumbotron .slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+header .layer .jumbotron .slide-fade-enter,
+header .layer .jumbotron .slide-fade-leave-to{
+  transform: translateX(10px);
+  opacity: 0;
 }
 header .layer .jumbotron h1{
   color: #FFFFFF;

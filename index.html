@@ -51,7 +51,9 @@
       <!-- fine menu -->
       <!-- inizio jumbotron -->
       <div class="jumbotron container">
-        <h1>{{bg[indice].title}}</h1>
+        <transition name="slide-fade" mode="out-in">
+          <h1 :key="indice">{{bg[indice].title}}</h1>
+        </transition>
         <p>Edu prime is the most versatile WordPress theme for educational purposes,<br> showcasing universities, courses, secondary schools etc. </p>
         <div class="btns">
           <a href="#" class="btn yellow"><i class="fas fa-search"></i>Search courses</a>
