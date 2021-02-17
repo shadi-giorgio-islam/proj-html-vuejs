@@ -37,7 +37,7 @@ a.btn{
 a.btn.yellow{
   color: #FFFFFFCC;
   background-color: #E9D758;
-  transition: background-color 1s linear;
+  transition: background-color 0.5s linear, color 0.5s linear;
 }
 a.btn.yellow:hover{
   color: #E56768;
@@ -46,9 +46,18 @@ a.btn.yellow:hover{
 a.btn.white{
   color: #E56768;
   background-color: #FFFFFF;
-  transition: background-color 1s linear, color 1s linear;
+  transition: background-color 0.5s linear, color 0.5s linear;
 }
 a.btn.white:hover{
+  color: #FFFFFFCC;
+  background-color: #E9D758;
+}
+a.btn.red{
+  color: #FFFFFF;
+  background-color: #E56768;
+  transition: background-color 0.5s linear, color 0.5s linear;
+}
+a.btn.red:hover{
   color: #FFFFFFCC;
   background-color: #E9D758;
 }
@@ -199,6 +208,7 @@ header .layer .left-box{
   justify-content: space-around;
   align-items: center;
   transition: width 0.2s linear;
+  z-index: 2;
 }
 header .layer .left-box:hover{
   width: 50px;
@@ -264,5 +274,233 @@ header .layer .left-box i{
   height: 350px;
   z-index: 1;
 }
+/* responsive browse */
+@media (max-width: 1199.98px) {
+  #browse .mini-container .content .image img{
+    display: none;
+  }
+}
+/* fine responsive browse */
 /* fine sezione browse */
+/* inizio sezione faculties */
+#faculties{
+  padding: 150px 0;
+  position: relative;
+}
+#faculties .img-bg img{
+  width: 100vw;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  z-index: -1;
+}
+#faculties h2{
+  font-size: 48px;
+  color: #3D404F;
+  text-align: center;
+}
+#faculties p{
+  padding: 40px 0 60px 0;
+  font-size: 16px;
+  color: #3D404F;
+  text-align: center;
+}
+#faculties .images{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+#faculties .images .img{
+  height: 200px;
+  width: 240px;
+  border: 1px solid lightgrey;
+  position: relative;
+}
+#faculties .images .img.active{
+  background-color: #E9D758;
+}
+#faculties .images .img img{
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#faculties .images .img i{
+  color: #E9D758;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#faculties .content{
+  padding-top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#faculties .content .text{
+  width: 50%;
+  text-align: left;
+}
+#faculties .content .text h2{
+  font-size: 48px;
+  color: #3D404F;
+  text-align: left;
+}
+#faculties .content .text p{
+  padding: 40px 0 60px 0;
+  font-size: 16px;
+  color: #3D404F;
+  text-align: left;
+}
+#faculties .content .image{
+  width: 40%;
+}
+#faculties .content .image img{
+  height: 350px;
+}
+/* fine sezione faculties */
+/* inizio sezione year */
+#year{
+  background-color: #E56768;
+  padding: 150px 0;
+  text-align: center;
+}
+#year .clock-img img{
+  height: 65px;
+}
+#year h2{
+  font-size: 48px;
+  font-weight: 400;
+  padding: 40px 0 80px 0;
+  color: #FFFFFF;
+}
+#year .row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+#year .row .text{
+  width: 400px;
+}
+#year .row .text:last-child{
+  margin-left: 60px;
+  margin-right: 220px;
+}
+#year .row.first .text{
+  margin-left: 240px;
+}
+#year .row.first .text:last-child{
+  margin-right: 0;
+  margin-left: 60px;
+}
+#year .row h3{
+  font-size: 18px;
+  font-weight: 400;
+  padding: 20px 0;
+  color: #FFFFFF;
+}
+#year .row p{
+  font-size: 16px;
+  color: #FFFFFF;
+  padding-bottom: 30px;
+}
+/* inizio responsive year */
+@media (max-width: 1199.98px) {
+  #year .timeline{
+    display: none;
+  }
+  #year .row .text:last-child{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #year .row.first .text{
+    margin-left: 0;
+  }
+  #year .row.first .text:last-child{
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+/* fine responsive year */
+/* fine sezione year */
+/* inizio sezione events */
+#events{
+  background-color: #E56768;
+  padding-bottom: 150px;
+  text-align: center;
+  position: relative;
+}
+#events .img-bg img{
+  width: 100vw;
+  position: absolute;
+  bottom: -158px;
+  left: -20px;
+}
+#events .calendar-img img{
+  height: 65px;
+}
+#events h2{
+  font-size: 48px;
+  font-weight: 400;
+  padding: 40px 0 80px 0;
+  color: #FFFFFF;
+}
+#events .row{
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#events .row .event{
+  background-color: #FFFFFF;
+  width: 360px;
+  height: 210px;
+  padding: 20px 20px 40px 20px;
+  border-radius: 15px;
+  margin-right: 20px;
+  position: relative;
+}
+#events .row .event h3{
+  padding: 10px 0;
+  font-size: 22px;
+  font-weight: 400;
+  color: #3D404F;
+}
+#events .row .event p{
+  font-size: 16px;
+  color: #3D404F;
+}
+#events .row .event p:first-child{
+  font-size: 14px;
+  color: #3D404F;
+}
+#events .row .event a{
+  width: 180px;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* responsive events */
+@media (max-width: 1199.98px) {
+  #events .row{
+    flex-direction: column;
+  }
+  #events .row .event{
+    width: 1000px;
+    margin-top: 60px;
+  }
+}
+/* fine responsive events */
+/* fine sezione events */
 /* fine main */

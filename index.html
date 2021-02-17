@@ -99,6 +99,100 @@
       </div>
     </section>
     <!-- fine sezione browse -->
+    <!-- inizio sezione faculties -->
+    <div id="faculties">
+      <h2>Faculties available at EduPrime</h2>
+      <p>A single university with a load of courses, tailored<br> to satisfy any student's needs</p>
+        <div class="images">
+          <div v-for="(item, index) in faculties" class="img" :class="item.display" @click="showContent(index)">
+            <img :src="item.smallImg" alt="faculties">
+            <i v-if="item.display== 'active'" class="fas fa-sort-down fa-3x"></i>
+          </div>
+        </div>
+        <div class="content mini-container">
+          <div class="image">
+            <img :src="faculties[indice].bigImg" alt="faculties">
+          </div>
+          <div class="text">
+            <h2>{{faculties[indice].name}}</h2>
+            <p>{{faculties[indice].text}}</p>
+            <a href="#" class="btn yellow">Read More</a>
+          </div>
+        </div>
+        <div class="img-bg">
+          <img src="svg/svg-0.svg" alt="bg">
+        </div>
+    </div>
+    <!-- fine sezione faculties -->
+    <!-- inizio sezione year -->
+    <div id="year">
+        <div class="clock-img">
+          <img src="img/Clock-and-Bell.png" alt="clock">
+        </div>
+        <h2>University Year</h2>
+        <!-- first row -->
+        <div class="row first">
+          <div class="text">
+            <h3>Demo Classes</h3>
+            <p>In the first week, students try to accommodate with the teaching style and choose their optional courses.</p>
+          </div>
+          <div class="text">
+            <h3>Graduation Day</h3>
+            <p>On the day of graduation, all students gather for the ceremony and then network and party among others.</p>
+          </div>
+        </div>
+        <!-- fine primo row -->
+        <!-- timeline -->
+        <div class="timeline">
+          <img src="img/Timeline-Item.png" alt="timeline">
+        </div>
+        <!-- fine timeline -->
+        <!-- secondo row -->
+        <div class="row last">
+          <div class="text">
+            <h3>Orientation</h3>
+            <p>First day of the university year, all students gather for the opening ceremony and then network with others.</p>
+          </div>
+          <div class="text">
+            <h3>Evaluation</h3>
+            <p>At the end of a semester, students take a general evaluation test for every subject they’re learning.</p>
+          </div>
+        </div>
+        <!-- fine secondo row -->
+    </div>
+    <!-- fine sezione year -->
+    <!-- inizio sezione events -->
+    <div id="events">
+      <div class="calendar-img">
+        <img src="img/upcoming-events-calendar-icon.png" alt="calendar">
+      </div>
+      <h2>Upcoming Events</h2>
+      <div class="row">
+        <div class="event">
+          <h3>Coaching Sessions</h3>
+          <p><i class="far fa-calendar-alt"> 20 May 21:30 PM</i></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="#" class="btn red"><i class="fas fa-plus"></i> Find More</a>
+        </div>
+        <div class="event">
+          <h3>Coaching Sessions</h3>
+          <p><i class="far fa-calendar-alt"> 24 Mar 18:00 PM</i></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="#" class="btn red"><i class="fas fa-plus"></i> Find More</a>
+        </div>
+        <div class="event">
+          <h3>Coaching Sessions</h3>
+          <p><i class="far fa-calendar-alt"> 12 Feb 13:30 PM</i></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="#" class="btn red"><i class="fas fa-plus"></i> Find More</a>
+        </div>
+      </div>
+      <a href="#" class="btn yellow">View All Events</a>
+      <div class="img-bg">
+        <img src="svg/svg-1.svg" alt="bg">
+      </div>
+    </div>
+    <!-- fine sezione events -->
   </main>
   <!-- fine main -->
 <!-- javascript -->
