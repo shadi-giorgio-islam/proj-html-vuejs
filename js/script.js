@@ -63,6 +63,22 @@ var header = new Vue({
     },
     closebox(index){
       this.menu[index].displayBox = 'none';
+    },
+    nextSlider(){
+      if (this.indice == 2) {
+        this.indice = 0;
+      }
+      else {
+        this.indice++;
+      }
+    },
+    prevSlider(){
+      if (this.indice == 0) {
+        this.indice = 2;
+      }
+      else {
+        this.indice--;
+      }
     }
   },
   mounted(){
