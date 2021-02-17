@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+*:focus {
+    outline: none;
+}
 body{
   font-family: 'Fredoka One', cursive;
 }
@@ -576,7 +579,6 @@ header .layer .left-box i{
 /* fine sezione latest */
 /* inizio sezione method */
 #method{
-  height: 600px;
   width: 100%;
   background-color: #FFFFFF;
   position: relative;
@@ -584,6 +586,7 @@ header .layer .left-box i{
 }
 #method .mini-container{
   position: relative;
+  padding-bottom: 80px;
 }
 #method .mini-container .bg-img-left img{
   height: 60px;
@@ -634,4 +637,46 @@ header .layer .left-box i{
 }
 /* fine responsive method */
 /* fine sezione method */
+/* inizio sezione newsletter */
+#newsletter{
+  height: 180px;
+  width: 100%;
+  background-color:  #E56768;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#newsletter h2{
+  font-size: 48px;
+  font-weight: 400;
+  padding-right: 80px;
+  color:  #FFFFFF;
+}
+#newsletter .email{
+  position: relative;
+}
+#newsletter .email input{
+  height: 70px;
+  width: 500px;
+  border: none;
+  border-radius: 35px;
+  padding-left: 20px;
+  font-size: 25px;
+}
+#newsletter .email a{
+  position: absolute;
+  right: 0;
+  top: -2px;
+  padding: 30px;
+}
+#newsletter .email a i{
+  color:  #FFFFFF;
+  transition: color 0.5s linear;
+}
+#newsletter .email a:hover i{
+  color:  #E56768;
+}
+/* fine sezione newsletter */
 /* fine main */
