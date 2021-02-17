@@ -11,7 +11,7 @@ body{
   margin: auto;
 }
 .mini-container{
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 body p{
@@ -288,7 +288,7 @@ header .layer .left-box i{
   position: relative;
 }
 #faculties .img-bg img{
-  width: 100vw;
+  width: 100%;
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -317,6 +317,7 @@ header .layer .left-box i{
   height: 200px;
   width: 240px;
   border: 1px solid lightgrey;
+  box-shadow: 0 0 3px #ccc;
   position: relative;
 }
 #faculties .images .img.active{
@@ -438,12 +439,6 @@ header .layer .left-box i{
   text-align: center;
   position: relative;
 }
-#events .img-bg img{
-  width: 100vw;
-  position: absolute;
-  bottom: -158px;
-  left: -20px;
-}
 #events .calendar-img img{
   height: 65px;
 }
@@ -497,10 +492,83 @@ header .layer .left-box i{
     flex-direction: column;
   }
   #events .row .event{
-    width: 1000px;
+    width: 950px;
     margin-top: 60px;
   }
 }
 /* fine responsive events */
 /* fine sezione events */
+/* inizio sezione latest */
+#latest{
+  background-color: #FFFFFF;
+  padding: 100px;
+  text-align: left;
+  position: relative;
+}
+#latest .img-bg img{
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+}
+#latest .mini-container h2{
+  font-size: 48px;
+  font-weight: 400;
+  padding: 40px 0;
+  color: #3D404F;
+}
+#latest .mini-container .row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#latest .mini-container .row .course{
+  height: 260px;
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 0 3px #ccc;
+}
+#latest .mini-container .row .course .course-img img{
+  height: 70px;
+}
+#latest .mini-container .row .course h3{
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px 0;
+  color: #3D404F;
+}
+#latest .mini-container .row .course p{
+  font-size: 14px;
+  color: #3D404F;
+}
+#latest .mini-container .row .course p i{
+  margin-right: 10px;
+}
+#latest .mini-container .row .course p span{
+  font-weight: 600;
+}
+#latest .mini-container .row .course a{
+  width: 200px;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* responsive latest */
+@media (max-width: 1199.98px) {
+  #latest .mini-container .row{
+    flex-direction: column;
+  }
+  #latest .mini-container .row .course{
+    width: 950px;
+    margin-top: 60px;
+  }
+}
+/* fine responsive latest */
+/* fine sezione latest */
 /* fine main */
