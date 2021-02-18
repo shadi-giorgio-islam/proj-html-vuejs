@@ -314,7 +314,7 @@ header .layer .corner-button a{
 }
 #browse .mini-container .content .image img{
   height: 350px;
-  z-index: 1;
+
 }
 /* responsive browse */
 @media (max-width: 1199.98px) {
@@ -629,7 +629,6 @@ header .layer .corner-button a{
   width: 100%;
   background-color: #FFFFFF;
   position: relative;
-  z-index: -2;
 }
 #method .mini-container{
   position: relative;
