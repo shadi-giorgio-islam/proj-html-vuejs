@@ -31,6 +31,7 @@ ul li{
 a{
   text-decoration: none;
   color: inherit;
+  z-index: 2;
 }
 a.btn{
   padding: 23px 45px;
@@ -250,6 +251,14 @@ header .layer .left-box i{
   color: #FFFFFF;
 }
 /* fine left box */
+/* inizio corner box */
+header .layer .corner-button a{
+  padding: 20px 25px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+/* fine corner box */
 /* fine menu */
 /* fine layer */
 /* fine header */
@@ -260,7 +269,7 @@ header .layer .left-box i{
   width: 100%;
   background-color: #FFFFFF;
   position: relative;
-  z-index: -2
+  z-index: -2;
 }
 /* sfondo */
 #browse .bg-img-right{
@@ -620,7 +629,7 @@ header .layer .left-box i{
   width: 100%;
   background-color: #FFFFFF;
   position: relative;
-  z-index: -2
+  z-index: -2;
 }
 #method .mini-container{
   position: relative;
